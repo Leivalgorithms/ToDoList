@@ -1,0 +1,4 @@
+ID,Tipo,Archivo/Ubicacion,Descripcion,Severidad,Evidencia,Estado
+D1,Configuracion/Dependencias,lib/main.dart y varios,"El analizador no puede resolver Flutter: 'package:flutter/material.dart' no existe. Esto provoca errores en cascada (runApp, Widget, Scaffold, etc.).",Alta,"dart analyze: uri_does_not_exist (package:flutter/material.dart) + 345 issues en cascada",Abierto
+D2,Configuracion/Lints,analysis_options.yaml:10:10,"El archivo de configuración incluye 'package:flutter_lints/flutter.yaml' pero no se encuentra, por lo que no se aplican reglas de linting.",Media,"dart analyze: include_file_not_found (package:flutter_lints/flutter.yaml)",Abierto
+D3,Testing/Referencia de paquete,test/widget_test.dart,"El test referencia un paquete distinto ('package:mini_notion/main.dart'), lo que rompe imports y ejecución de pruebas para este proyecto.",Media,"dart analyze: uri_does_not_exist (package:mini_notion/main.dart) en test/widget_test.dart",Abierto
